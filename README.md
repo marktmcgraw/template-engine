@@ -1,2 +1,5 @@
 # template-engine
-A Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person
+A Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.
+
+# Notes
+Test files provided by course instructor.
