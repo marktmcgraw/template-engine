@@ -255,5 +255,129 @@ async function buildIntern() {
   internArr.push(intern);
   next();
 }
+createteam = async function teamHTML() {
+  fs.writeFileSync(
+    "./output/team.html",
+    "<DOCTYPE! HTML>" +
+      "<html>" +
+      "<head>" +
+      '<meta charset="UTF-8">' +
+      '<link rel = "stylesheet" type= "text/css" href="style.css">' +
+      '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>' +
+      '<meta name="viewport" content="width=device-width, initial-scale=1.0"/> ' +
+      '<meta http-equiv="X-UA-Compatible" content="ie=edge" />' +
+      "</head>" +
+      "<body>" +
+      "<header>" +
+      '<h1 class="teamname"> Employee Team Summary </h1>' +
+      "</header>" +
+      "<container>" +
+      '<div class="row">' +
+      '<div class="col">'
+  );
+
+  fs.appendFileSync(
+    "./output/team.html",
+    '<div id="manager">' +
+      '<div class="card">' +
+      '<div class="card-header managerstyle">' +
+      managerArr[0].name +
+      "</div>" +
+      '<div class="card-body">' +
+      "<div class=content>" +
+      "<p>" +
+      "<span> ID: </span>" +
+      managerArr[0].id +
+      "</p> <hr>" +
+      "<p>" +
+      "<span> Email: </span>" +
+      managerArr[0].email +
+      "</p> <hr>" +
+      "<p>" +
+      "<span> Office Number: </span>" +
+      managerArr[0].officeNumber +
+      "</p>" +
+      "</div>" +
+      "</div>" +
+      '<div class="card-footer managerstyle">' +
+      "Manager" +
+      "</div>" +
+      "</div>" +
+      "</div>" +
+      "</div>"
+  );
+
+  for (i = 0; i < engineerArr.length; i++) {
+    fs.appendFileSync(
+      "./output/team.html",
+      '<div id="engineer">' +
+        '<div class="card">' +
+        '<div class="card-header engingeerstyle">' +
+        engineerArr[i].name +
+        "</div>" +
+        '<div class="card-body">' +
+        "<div class=content>" +
+        "<p>" +
+        "<span> ID: </span>" +
+        engineerArr[i].id +
+        "</p> <hr>" +
+        "<p>" +
+        "<span> Email: </span>" +
+        engineerArr[i].email +
+        "</p> <hr>" +
+        "<p>" +
+        "<span> Office Number: </span>" +
+        engineerArr[i].gitname +
+        "</p>" +
+        "</div>" +
+        "</div>" +
+        '<div class="card-footer engingeerstyle"> Engineer </div>' +
+        "</div>" +
+        "</div>" +
+        "</div>"
+    );
+  }
+
+  for (i = 0; i < internArr.length; i++) {
+    fs.appendFileSync(
+      "./output/team.html",
+      '<div id="intern">' +
+        '<div class="card">' +
+        '<div class="card-header internstyle">' +
+        internArr[i].name +
+        "</div>" +
+        '<div class="card-body">' +
+        "<div class=content>" +
+        "<p>" +
+        "<span> ID: </span>" +
+        internArr[i].id +
+        "</p><hr>" +
+        "<p>" +
+        "<span> Email: </span>" +
+        internArr[i].email +
+        "</p><hr>" +
+        "<p>" +
+        "<span> Office Number: </span>" +
+        internArr[i].school +
+        "</p>" +
+        "</div>" +
+        "</div>" +
+        '<div class="card-footer internstyle"> Intern </div>' +
+        "</div>" +
+        "</div>" +
+        "</div>"
+    );
+  }
+
+  fs.appendFileSync(
+    "./output/team.html",
+    "</div>" + "</div>" + "</container>" + "</body>" + "</html>"
+  );
+
+  console.log("Check output folder for employee team");
+};
+
+start();
+
 
 
