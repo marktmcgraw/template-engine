@@ -11,4 +11,3 @@ Test files provided by course instructor.
 
 https://marktmcgraw.github.io/template-engine/.
 
-![Working app](https://github.com/marktmcgraw/template-engine/blob/master/Assets/employee-tracker.gif)
