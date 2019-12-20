@@ -11,3 +11,6 @@ Test files provided by course instructor.
 
 https://marktmcgraw.github.io/template-engine/.
 
+# App Demo
+
+![App Demo](https://github.com/marktmcgraw/template-engine/blob/master/Assets/Template_Engine%20Demo.gif)
