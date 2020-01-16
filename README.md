@@ -17,7 +17,7 @@ https://marktmcgraw.github.io/template-engine/.
 <br>
 ![Template Engine Demo](Assets/Template_Engine Demo.gif)
 <br>
-![Generated HTML](Assets/GeneratedHTML_template-engine.png)
+![Generated HTML](Assets/Template_Engine Demo.gif)
 
 
 
