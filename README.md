@@ -13,9 +13,9 @@ https://marktmcgraw.github.io/template-engine/.
 
 ### Demo
 
-![User Prompts](Assets/Terminal User Prompts.png)
+![User Prompts](Terminal_User_Prompts.png)
 
-![Template Engine Demo](Assets/Template_Engine Demo.gif)
+![Template Engine Demo](Template_Engine_Demo.gif)
 
 ![Generated HTML](Assets/GeneratedHTML_template-engine.png)
 
